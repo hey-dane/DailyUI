@@ -4,17 +4,25 @@ import "./signupcss.css";
 import StarBackground from "./StarBackground";
 
 const SignUpForm = () => {
-  const [formData, setFormData] = useState({});
-  const completedFields = Object.values(formData).filter(Boolean).length;
+  const [stars, setStars] = useState([]);
 
   const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevState) => ({ ...prevState, [name]: value }));
+    const numberOfNewStars = Math.floor(Math.random() * 7) + 1;
+    const newStars = [];
+
+    for (let i = 0; i < numberOfNewStars; i++) {
+      newStars.push({
+        left: Math.random() * 100,
+        top: Math.random() * 100,
+      });
+    }
+
+    setStars((prevStars) => [...prevStars, ...newStars]);
   };
 
   return (
     <div className="signup-main">
-      <StarBackground starCount={completedFields * 10} />
+      <StarBackground stars={stars} />
 
       <div className="signup-container">
         <h2>Sign up for the Star to Star Gala</h2>
