@@ -11,6 +11,8 @@ const StarBackground = ({ stars }) => {
           style={{
             left: `${star.left}%`,
             top: `${star.top}%`,
+            width: `${star.size}rem`, // Apply the size as width
+            height: `${star.size}rem`, // Apply the size as height
           }}
         ></div>
       ))}

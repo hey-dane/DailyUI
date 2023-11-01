@@ -11,9 +11,11 @@ const SignUpForm = () => {
     const newStars = [];
 
     for (let i = 0; i < numberOfNewStars; i++) {
+      const size = Math.random() * 0.25 + 0.1;
       newStars.push({
         left: Math.random() * 100,
         top: Math.random() * 100,
+        size: size,
       });
     }
 
