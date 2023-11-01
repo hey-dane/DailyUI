@@ -27,7 +27,7 @@ const SignUpForm = () => {
       <StarBackground stars={stars} />
 
       <div className="signup-container">
-        <h2>Sign up for the Star to Star Gala</h2>
+        <h2>Registration Form</h2>
         <div className="signup-form">
           <form>
             <label htmlFor="firstname">First Name</label>

@@ -1,15 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital@0;1&family=Julius+Sans+One&display=swap");
+
 .signup-container {
   width: 300px;
-  margin: 50px auto;
-  padding: 20px;
+  padding: 25px;
+  margin: 150px auto;
   border: 1px solid #ddd;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #cbe0f7;
+  font-family: "Archivo Narrow", sans-serif;
+}
+
+h1 {
+  font-family: "Julius Sans One", serif;
+  font-size: 48px;
+}
+
+.signup-main h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
 }
 
 form {
   display: flex;
   flex-direction: column;
+  color: #c3f0fe;
 }
 
 input {
@@ -17,17 +35,23 @@ input {
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #ddd;
+  background-color: #243655;
+  color: #8ec3d4;
 }
 
 button {
+  display: flex;
+  margin: 10px auto;
   padding: 10px;
-  background-color: #007bff;
-  color: white;
+  background-color: #c3f0fe;
+  color: #060c25;
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #ffffff;
+  color: #000000;
+  box-shadow: 0 0 20px 10px hsla(204, 70%, 53%, 0.5);
 }
