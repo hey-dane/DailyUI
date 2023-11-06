@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import "./signupcss.css";
-// import StarMap from "./StarMap";
+import styles from "./SignUpForm.module.css";
 import StarBackground from "./StarBackground";
 
-const SignUpForm = () => {
+function SignUpForm() {
   const [stars, setStars] = useState([]);
 
   const handleInputChange = (e) => {
@@ -26,15 +25,16 @@ const SignUpForm = () => {
     <div className="signup-main">
       <StarBackground stars={stars} />
 
-      <div className="signup-container">
-        <h2>Registration Form</h2>
+      <div className={styles.container}>
+        <h2 className={styles.title}>Registration Form</h2>
         <div className="signup-form">
-          <form>
+          <form className={styles.formContainer}>
             <label htmlFor="firstname">First Name</label>
             <input
               type="text"
               id="firstname"
               name="firstname"
+              className={styles.signupInput}
               required
               onChange={handleInputChange}
             />
@@ -44,6 +44,7 @@ const SignUpForm = () => {
               type="text"
               id="lastname"
               name="lastname"
+              className={styles.signupInput}
               required
               onChange={handleInputChange}
             />
@@ -53,6 +54,7 @@ const SignUpForm = () => {
               type="text"
               id="email"
               name="email"
+              className={styles.signupInput}
               required
               onChange={handleInputChange}
             />
@@ -62,6 +64,7 @@ const SignUpForm = () => {
               type="password"
               id="password"
               name="password"
+              className={styles.signupInput}
               required
               onChange={handleInputChange}
             />
@@ -71,12 +74,13 @@ const SignUpForm = () => {
               type="password"
               id="confirmpassword"
               name="confirmpassword"
+              className={styles.signupInput}
               required
               onChange={handleInputChange}
             />
 
             <div className="signup-button">
-              <button type="submit" id="signupbutton" name="signupbutton">
+              <button type="submit" id="signupbutton" className={styles.button}>
                 Register
               </button>
             </div>
@@ -85,6 +89,6 @@ const SignUpForm = () => {
       </div>
     </div>
   );
-};
+}
 
 export default SignUpForm;

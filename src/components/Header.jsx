@@ -25,6 +25,9 @@ function Header() {
               {showDropdown && (
                 <ul className="dropdown-content">
                   <li onClick={() => handleNavigate("/signup")}>Sign Up</li>
+                  <li onClick={() => handleNavigate("/creditcardform")}>
+                    Credit Card Form
+                  </li>
                   {/* ... */}
                 </ul>
               )}
