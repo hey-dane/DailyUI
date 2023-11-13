@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee&family=Sigmar+One&display=swap");
+
+.bambooImage {
+  width: 100%;
+  height: auto;
+}
+
+.landingPageContainer {
+  position: relative;
+  height: 100vh;
+  background-color: #afd57b;
+  z-index: -1;
+}
+
+.backgroundText {
+  position: absolute;
+  top: 30%;
+  left: 18%;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: -1;
+  font-size: 14vw;
+  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: rgb(58, 96, 0);
+  font-family: "Bungee", sans-serif;
+  color: greenyellow;
+}
+
+.bambooImages {
+  position: relative;
+  top: 10%;
+}
+
+.main {
+  display: flex;
+  justify-content: center; /* Horizontal centering */
+  align-items: center; /* Vertical centering */
+  height: 100vh; /* Ensure full viewport height */
+}
