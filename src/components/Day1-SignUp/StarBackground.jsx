@@ -1,18 +1,18 @@
 import React from "react";
-import "./StarBackground.css";
+import styles from "./StarBackground.module.css";
 
 const StarBackground = ({ stars }) => {
   return (
-    <div className="star-background">
+    <div className={styles.starBackground}>
       {stars.map((star, i) => (
         <div
           key={i}
-          className="star"
+          className={styles.star}
           style={{
             left: `${star.left}%`,
             top: `${star.top}%`,
-            width: `${star.size}rem`, // Apply the size as width
-            height: `${star.size}rem`, // Apply the size as height
+            width: `${star.size}rem`,
+            height: `${star.size}rem`,
           }}
         ></div>
       ))}

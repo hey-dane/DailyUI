@@ -28,6 +28,9 @@ function Header() {
                   <li onClick={() => handleNavigate("/creditcardform")}>
                     Credit Card Form
                   </li>
+                  <li onClick={() => handleNavigate("/landingpage")}>
+                    Landing Page
+                  </li>
                   {/* ... */}
                 </ul>
               )}
