@@ -4,11 +4,14 @@ export default function Calculator() {
   return (
     <div className={styles.calcMain}>
       <div className={styles.calcContainer}>
-        <div className={styles.calcCard}>
-          <textarea type="text" id="inputtext" placeholder="0"></textarea>
+        <div className={styles.calcTotal}>
+          <input type="text" id="inputtext" readOnly value="3612" />
+        </div>
+
+        <div className={styles.calcDigits}>
           <button>C</button>
           <button>DEL</button>
-          <button></button>
+          <button>%</button>
           <button>+</button>
           <button>7</button>
           <button>8</button>
@@ -22,9 +25,9 @@ export default function Calculator() {
           <button>2</button>
           <button>3</button>
           <button>/</button>
-          <button>00</button>
           <button>0</button>
           <button>.</button>
+          <button>+/-</button>
           <button>=</button>
         </div>
       </div>

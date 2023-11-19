@@ -79,7 +79,7 @@ function SignUpForm() {
               onChange={handleInputChange}
             />
 
-            <div className="signup-button">
+            <div className={styles.button}>
               <button type="submit" id="signupbutton" className={styles.button}>
                 Register
               </button>
