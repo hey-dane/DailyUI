@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import "bootstrap/dist/css/bootstrap.min.css";
 import LandingPage from "./components/Day3-/LandingPage";
 import Calculator from "./components/Day4-Calculator/Calculator";
+import AppIcon from "./components/Day5/AppIcon";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/creditcardform" element={<CreditCardForm />} />
         <Route path="/landingpage" element={<LandingPage />} />
         <Route path="/calculator" element={<Calculator />} />
+        <Route path="/appicon" element={<AppIcon />} />
         {/* Define more routes as needed */}
       </Routes>
     </div>

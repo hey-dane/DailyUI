@@ -1,0 +1,37 @@
+.AppIconMain {
+  position: relative;
+  display: flex;
+}
+
+.AppIcon {
+  display: flex;
+  flex-direction: column;
+  border-style: solid;
+  border-color: #01354b;
+  border-radius: 20%;
+  border-width: 30px;
+  width: 500px;
+  height: 500px;
+}
+
+.sky {
+  display: flex;
+  background-color: #31cfd5;
+  height: 40%;
+  width: 100%;
+  z-index: -1;
+}
+
+.orangeSky {
+  display: flex;
+  background-image: linear-gradient(#ffc58b, #ff9673 40%);
+  height: 60%;
+  width: 100%;
+  z-index: -1;
+}
+
+.wavyLine {
+  stroke: blue;
+  stroke-width: 10;
+  fill: none;
+}
