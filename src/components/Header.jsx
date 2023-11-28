@@ -34,6 +34,7 @@ function Header() {
                   <li onClick={() => handleNavigate("/calculator")}>
                     Calculator
                   </li>
+                  <li onClick={() => handleNavigate("/appicon")}>App Icon</li>
                   {/* ... */}
                 </ul>
               )}
