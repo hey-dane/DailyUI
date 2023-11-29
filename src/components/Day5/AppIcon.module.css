@@ -1,6 +1,7 @@
 .AppIconMain {
   position: relative;
   display: flex;
+  justify-content: center;
 }
 
 .AppIcon {
@@ -31,7 +32,13 @@
 }
 
 .wavyLine {
-  stroke: blue;
-  stroke-width: 10;
+  stroke: #01354b;
+  stroke-width: 20;
   fill: none;
+}
+
+.waves {
+  width: 100%;
+  margin-left: -50px;
+  margin-top: 20%;
 }
