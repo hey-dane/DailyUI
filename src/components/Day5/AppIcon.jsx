@@ -8,6 +8,39 @@ export default function AppIcon() {
         <div className={styles.orangeSky}>
           <div className={styles.waves}>
             <svg width="500px" height="250" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient
+                  id="verticalGradient"
+                  x1="0%"
+                  y1="0%"
+                  x2="0%"
+                  y2="100%"
+                >
+                  <stop
+                    offset="15%"
+                    style={{ stopColor: "white", stopOpacity: 1 }}
+                  />
+                  <stop
+                    offset="30%"
+                    style={{ stopColor: "#3BCEC1", stopOpacity: 1 }}
+                  />
+                  <stop
+                    offset="80%"
+                    style={{ stopColor: "#024D65", stopOpacity: 1 }}
+                  />
+                </linearGradient>
+                <clipPath id="clipWave">
+                  <path d="M0,25 Q30,50 60,25 T120,25 T180,25 T240,25 T300,25 T360,25 T420,25 T480,25 T540,25 T600,25 T660,25 T720,25 V250 H0 Z" />
+                </clipPath>
+              </defs>
+              <rect
+                x="0"
+                y="0"
+                width="100%"
+                height="72%"
+                fill="url(#verticalGradient)"
+                clip-path="url(#clipWave)"
+              />
               <path
                 d="M40,25 Q30,50 60,25 T120,25 T180,25 T240,25 T300,25 T360,25 T420,25 T480,25 T540,25 T600,25 T660,25 T720,25"
                 className={styles.wavyLine}
@@ -23,6 +56,7 @@ export default function AppIcon() {
             </svg>
           </div>
         </div>
+        <div className={styles.mountain}></div>
       </div>
     </div>
   );

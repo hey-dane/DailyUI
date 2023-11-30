@@ -6,13 +6,17 @@
 
 .AppIcon {
   display: flex;
+  position: relative;
   flex-direction: column;
+  justify-content: center; /* Centers children vertically */
+  align-items: center; /* Centers children horizontally */
   border-style: solid;
   border-color: #01354b;
   border-radius: 20%;
   border-width: 30px;
   width: 500px;
   height: 500px;
+  overflow: hidden;
 }
 
 .sky {
@@ -41,4 +45,19 @@
   width: 100%;
   margin-left: -50px;
   margin-top: 20%;
+}
+
+.mountain {
+  position: absolute; /* Position it within .AppIcon */
+  top: 75%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%) rotate(45deg); /* Adjust position and rotation */
+  width: 400px; /* Adjust the size as needed */
+  height: 400px; /* Adjust the size as needed */
+  border-top: 30px solid #01354b; /* Top border */
+  border-left: 30px solid #01354b; /* Left border */
+  border-right: none; /* No right border */
+  border-bottom: none; /* No bottom border */
+  z-index: 1;
+  border-radius: 10px;
 }
