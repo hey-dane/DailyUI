@@ -2,6 +2,7 @@
   position: relative;
   display: flex;
   justify-content: center;
+  top: 50px;
 }
 
 .AppIcon {
@@ -17,12 +18,13 @@
   width: 500px;
   height: 500px;
   overflow: hidden;
+  top: 17px;
 }
 
 .sky {
   display: flex;
   background-color: #32d1d2;
-  height: 40%;
+  height: 100%;
   width: 100%;
   z-index: -1;
 }
@@ -30,31 +32,31 @@
 .orangeSky {
   display: flex;
   background-image: linear-gradient(#ffc58b, #ff9071 32%);
-  height: 60%;
+  height: 58%;
   width: 100%;
   z-index: -1;
 }
 
 .wavyLine {
   stroke: #01354b;
-  stroke-width: 20;
+  stroke-width: 25;
   fill: none;
 }
 
 .waves {
   width: 100%;
   margin-left: -55px;
-  margin-top: 23%;
+  margin-top: 21%;
   z-index: 2;
 }
 
 .mountain {
   position: absolute;
-  top: 75%;
+  top: 77%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(45deg);
-  width: 375px;
-  height: 375px;
+  width: 380px;
+  height: 380px;
   border-top: 26px solid #01354b;
   border-left: 26px solid #01354b;
   border-right: none;
@@ -64,6 +66,7 @@
 
   box-shadow: inset 0px 18px 0px rgba(0, 0, 0, 0.15);
 }
+
 .mountain::before {
   content: "";
   position: absolute;
@@ -73,20 +76,21 @@
   height: 100%;
   background: linear-gradient(to right, transparent 30%, #0db18b 70%);
   border-radius: 28px;
-  pointer-events: none; /* Prevents the pseudo-element from blocking interactions */
+  pointer-events: none;
 }
+
 .snowCap {
   background-color: white;
   position: absolute;
-  top: -1%; /* Center vertically */
-  left: -1%; /* Center horizontally */
+  top: -1%;
+  left: -1%;
   transform: rotate(180deg);
-  width: 80px; /* Adjust the size as needed */
-  height: 80px; /* Adjust the size as needed */
-  border-top: 27px solid #01354b; /* Top border */
-  border-left: 27px solid #01354b; /* Left border */
-  border-right: 1px solid #01354b; /* No right border */
-  border-bottom: 1px solid #01354b; /* No bottom border */
+  width: 80px;
+  height: 80px;
+  border-top: 27px solid #01354b;
+  border-left: 27px solid #01354b;
+  border-right: 5px solid #01354b;
+  border-bottom: 5px solid #01354b;
   z-index: 1;
   border-top-left-radius: 14px;
 }
@@ -158,4 +162,50 @@
   top: 0%;
   right: -95px;
   transform: translateY(-50%);
+}
+/* 
+.AppIcon:hover::after {
+  content: "";
+  position: absolute;
+  top: -28px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("src/assets/AppICON2.png");
+  background-size: 560px;
+  background-position-x: -50px;
+  background-position-y: -30px;
+  opacity: 0.5;
+  z-index: -1;
+} */
+
+.AppIconImage {
+  width: 540px;
+  height: 540px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.AppIconImage img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.imageContainer,
+.iconContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.AppIcon {
+  margin-bottom: 35px;
+}
+
+.comment {
+  text-align: center;
+  color: #333;
+  font-size: 14px;
+  margin-top: 10px;
 }
