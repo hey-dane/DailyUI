@@ -9,6 +9,13 @@ export default function AppIcon() {
             <div className={`${styles.sunRay} ${styles.topRay}`}></div>
             <div className={`${styles.sunRay} ${styles.leftRay}`}></div>
             <div className={`${styles.sunRay} ${styles.rightRay}`}></div>
+            <div className={`${styles.sunRay} ${styles.topRay}`}></div>
+            <div className={`${styles.sunRayWide} ${styles.leftWideRay}`}></div>
+            <div
+              className={`${styles.sunRayWide} ${styles.rightWideRay}`}
+            ></div>
+            <div className={`${styles.sunRay} ${styles.leftHighRay}`}></div>
+            <div className={`${styles.sunRay} ${styles.rightHighRay}`}></div>
           </div>
         </div>
         <div className={styles.orangeSky}>
@@ -26,7 +33,7 @@ export default function AppIcon() {
                   y2="100%"
                 >
                   <stop
-                    offset="10%"
+                    offset="15%"
                     style={{ stopColor: "white", stopOpacity: 1 }}
                   />
                   <stop
